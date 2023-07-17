@@ -30,12 +30,11 @@ const assertArraysEqual = function (array1, array2) {
   if (eqArrays(array1, array2) === true) {
     console.log(` ✅✅✅ Assertion Passed: ${array1} === ${array2}`);
     return true;
-  }
-  else {
+  } else {
     console.log(` 🛑🛑🛑 Assertion Failed: ${array1} !== ${array2}`);
     return false;
   }
-}
+};
 
 
 // the challenge wants you to take a source Array, and an array of items to remove from source (without editing the original)
@@ -44,8 +43,8 @@ const without = function (source, itemsToRemove) {
   let resultArray = source.slice(); // copying the source array to a fresh array to not modify the original
   for (let i = 0; i < source.length; i++) {
 
-    for (let item of itemsToRemove){
-      if(source[i] === item){
+    for (let item of itemsToRemove) {
+      if (source[i] === item) {
         resultArray.splice(i, 1);
       }
     }
