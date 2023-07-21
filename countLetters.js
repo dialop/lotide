@@ -1,5 +1,5 @@
 // FUNCTION IMPLEMENTATION
-const assertEqual = function(actual, expected) {
+const assertEqual = function (actual, expected) {
   if (actual === expected) {
 
     console.log(` ✅✅✅ Assertion Passed: ${actual} === ${expected}`);
@@ -12,7 +12,7 @@ const assertEqual = function(actual, expected) {
 };
 
 
-const countLetters = function(word) {
+const countLetters = function (word) {
   const letterCount = {};
 
   word = word.toLowerCase();
