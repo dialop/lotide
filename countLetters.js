@@ -11,7 +11,6 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-// check if text exists, if it does, add +1 to value in that text. != to a value then create one +1
 
 const countLetters = function(word) {
   const letterCount = {};
