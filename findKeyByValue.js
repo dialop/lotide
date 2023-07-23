@@ -2,15 +2,6 @@
 // the function should scan the object and return the first key that contains the given value 
 // if no key is found = return undefined 
 
-const { findKey } = require("lodash");
-
-
-
-
-
-
-
-
 // FUNCTION IMPLEMENTATION
 const assertEqual = function (actual, expected) {
     if (actual === expected) {
