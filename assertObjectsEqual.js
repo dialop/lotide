@@ -1,7 +1,7 @@
 
 
 // eqObjects
-const eqObjects = function (object1, object2) {
+const eqObjects = function(object1, object2) {
   const key1 = Object.keys(object1);
   const key2 = Object.keys(object2);
 
@@ -12,8 +12,7 @@ const eqObjects = function (object1, object2) {
   for (const key of key1) {
     if (object1[key] !== object2[key]) {
       return false;
-    }
-    else {
+    } else {
       return true;
     }
 
@@ -36,7 +35,7 @@ const eqObjects = function (object1, object2) {
 
 
 // FUNCTION IMPLEMENTATION
-const assertObjectsEqual = function (actual, expected) {
+const assertObjectsEqual = function(actual, expected) {
   const inspect = require('util').inspect;
 
   console.log(`Example label: ${inspect(actual)}`);
