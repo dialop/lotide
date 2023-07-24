@@ -1,4 +1,4 @@
-const assertEqual = function (actual, expected) {
+const assertEqual = function(actual, expected) {
   if (actual === expected) {
 
     console.log(` ✅✅✅ Assertion Passed: ${actual} === ${expected}`);
@@ -10,7 +10,7 @@ const assertEqual = function (actual, expected) {
   }
 };
 
-const eqArrays = function (series1, series2) {
+const eqArrays = function(series1, series2) {
   if (series1.length !== series2.length) {
     return false;
   }
