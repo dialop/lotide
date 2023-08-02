@@ -1,7 +1,7 @@
 // test/assertEqualTest.js
 
 const head = require('../head');
-const assertEqual = require('./assertEqual');
+const assertEqual = require('../assertEqual');
 
 
 // Test cases for head function using assertEqual
