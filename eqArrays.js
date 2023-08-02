@@ -1,6 +1,3 @@
-const eqArrays = require('../eqArrays');
-const assertEqual = require('../assertEqual');
-
 const eqArrays = function(series1, series2) {
   if (series1.length !== series2.length) {
     return false;
@@ -20,7 +17,7 @@ const eqArrays = function(series1, series2) {
   */
   for (let i of series1) {
     if (i !== series2[index]) {
-      console.log(i + " " + series2[i]);
+      // console.log(i + " " + series2[i]);
       return false;
     }
     index++;
@@ -31,8 +28,7 @@ const eqArrays = function(series1, series2) {
 
 //Test Code
 
-assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);
-
+// assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);
 /*
 eqArrays([1, 2, 3], [1, 2, 3]) // => true
 eqArrays([1, 2, 3], [3, 2, 1]) // => false
@@ -41,4 +37,3 @@ eqArrays(["1", "2", "3"], ["1", "2", "3"]) // => true
 eqArrays(["1", "2", "3"], ["1", "2", 3]) // => false  */
 
 module.exports = eqArrays;
-
