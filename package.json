@@ -1,5 +1,5 @@
 {
-  "name": "lotide",
+  "name": "@dialop/lotide",
   "version": "1.0.0",
   "main": "assertArraysEqual.js",
   "scripts": {
@@ -9,13 +9,13 @@
     "type": "git",
     "url": "git+https://github.com/dialop/lotide.git"
   },
-  "author": "",
+  "author": "Diana Lopez",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/dialop/lotide/issues"
   },
   "homepage": "https://github.com/dialop/lotide#readme",
-  "description": "",
+  "description": "Publishing Lotide Assignment to npm",
   "devDependencies": {
     "chai": "^4.3.7",
     "mocha": "^9.2.2"
