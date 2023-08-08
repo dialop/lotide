@@ -1,7 +1,7 @@
 {
   "name": "@dialop/lotide",
   "version": "1.0.0",
-  "main": "assertArraysEqual.js",
+  "main": "index.js",
   "scripts": {
     "test": "mocha"
   },
