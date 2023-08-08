@@ -1,6 +1,6 @@
 const middle = function(array) {
   const length = array.length;
-  if (length === 0) {
+  if (length < 3) {
     return [];
   }
   
