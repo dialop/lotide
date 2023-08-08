@@ -26,9 +26,26 @@ const assertArraysEqual = function(array1, array2) {
   }
 };
 
-// flatten is supposed to convert the current nested array into a single array using the Using Array.prototype.flat() method
+// flatten is supposed to convert the current nested array into a single array
+
+const flattenArray = function(arr) {
+  let flattened = [];
+
+
+  for (let item of arr) {
+    if (Array.isArray(item)) {
+      for (let indItem of item) {
+        flattened.push(indItem);
+      }
+    } else {
+      flattened.push(item);
+    }
+  }
+  return flattened;
+};
 
 const nestedArray = [1, 2, [3, 4], 5, [6]];
-const flattenedArray = nestedArray.flat(Infinity);
+const flattenedArray = flattenArray(nestedArray);
 console.log(flattenedArray);
 
+assertArraysEqual(flattenedArray, [1, 2, 3, 4, 5, 6]);
