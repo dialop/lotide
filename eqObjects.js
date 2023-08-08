@@ -39,22 +39,22 @@ const eqObjects = function(object1, object2) {
     return false;
   }
 
+  if (Array.isArray(object1) && Array.isArray(object2)) {
+    if (!eqArrays(object1, object2)) {
+      return false;
+    }
+  } else {
+
+    if (Object.keys(object1).every(key => object2.hasOwnProperty(key) && object2[key] != object1[key])) {
+      return false;
+    }
+  }
+
   for (const key of key1) {
     if (object1[key] !== object2[key]) {
       return false;
     } else {
       return true;
-    }
-
-    if (Array.isArray(object1) && Array.isArray(object2)) {
-      if (!eqArrays(object1, object2)) {
-        return false;
-      }
-    } else {
-
-      if (object1 !== object2) {
-        return false;
-      }
     }
   }
 
