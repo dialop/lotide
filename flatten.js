@@ -1,3 +1,4 @@
+/*
 const eqArrays = function(series1, series2) {
   if (series1.length !== series2.length) {
     return false;
@@ -14,8 +15,6 @@ const eqArrays = function(series1, series2) {
   return true;
 };
 
-//
-
 const assertArraysEqual = function(array1, array2) {
   if (eqArrays(array1, array2) === true) {
     console.log(` ✅✅✅ Assertion Passed: ${array1} === ${array2}`);
@@ -25,6 +24,7 @@ const assertArraysEqual = function(array1, array2) {
     return false;
   }
 };
+*/
 
 // flatten is supposed to convert the current nested array into a single array
 
@@ -44,8 +44,11 @@ const flattenArray = function(arr) {
   return flattened;
 };
 
-const nestedArray = [1, 2, [3, 4], 5, [6]];
-const flattenedArray = flattenArray(nestedArray);
-console.log(flattenedArray);
+// Tester Functions
+// const nestedArray = [1, 2, [3, 4], 5, [6]];
+// const flattenedArray = flattenArray(nestedArray);
+// console.log(flattenedArray);
 
-assertArraysEqual(flattenedArray, [1, 2, 3, 4, 5, 6]);
+// assertArraysEqual(flattenedArray, [1, 2, 3, 4, 5, 6]);
+
+module.exports = flattenArray;

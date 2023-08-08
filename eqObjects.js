@@ -43,72 +43,17 @@ const eqObjects = function(object1, object2) {
   return true;
 };
 
-const shirtObject = { color: "red", size: "medium" };
-const anotherShirtObject = { size: "medium", color: "red" };
-console.log(eqObjects(shirtObject , anotherShirtObject)); // => true
-// assertEquals(eqObjects(shirtObject , anotherShirtObject), true);
 
-
-
-const longSleeveShirtObject = { size: "medium", color: "red", sleeveLength: "long" };
-console.log(eqObjects(shirtObject , longSleeveShirtObject)); // => false
-// assertEquals(eqObjects(shirtObject , longSleeveShirtObject), false);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// const eqObjects = function(object1, object2) {
-
-// for (let objectKey in object1) {
-
-//   if (object1[objectKey] === object2){
-//       return true;
-
-//       console.log());
-//   }
-// }
-
-// }
-
+// Tester Functions
 // const shirtObject = { color: "red", size: "medium" };
-// const anotherShirtObject= { size: "medium", color: "red" };
-// eqObjects(shirtObject , anotherShirtObject); // => true
-
-// //We need to use that return value in combination with assertEquals to test if the function is working correctly.
+// const anotherShirtObject = { size: "medium", color: "red" };
+// console.log(eqObjects(shirtObject , anotherShirtObject)); // => true
 // assertEquals(eqObjects(shirtObject , anotherShirtObject), true);
 
-// const longSleeveShirtObject= { size: "medium", color: "red", sleeveLength: "long" };
-// eqObjects(shirtObject , longSleeveShirtObject); // => false
 
+
+// const longSleeveShirtObject = { size: "medium", color: "red", sleeveLength: "long" };
+// console.log(eqObjects(shirtObject , longSleeveShirtObject)); // => false
 // assertEquals(eqObjects(shirtObject , longSleeveShirtObject), false);
+
+module.exports = eqObjects;

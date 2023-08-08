@@ -14,5 +14,8 @@ const countLetters = function(word) {
   return letterCount;
   
 };
-  
-console.log(countLetters("Lighthouse in the house"));
+ 
+// Tester Function
+// console.log(countLetters("Lighthouse in the house"));
+
+module.exports = countLetters;

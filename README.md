@@ -6,13 +6,19 @@ This repository contains all the Lotide project files completed by [Diana](https
 
 ## Installation
 
-[Clone](https://github.com/dialop/lotide.git) or fork this repo into your own directory, alternatively you can use the following commandline:
+[Clone](https://github.com/dialop/lotide.git) or fork this repository into your own directory, alternatively you can use the following commandline:
 
 `$ git clone https://github.com/dialop/lotide`
 
 or if you're using NPM:
 
 `$ npm i https://github.com/dialop/lotide`
+
+---
+
+Add the library to any file using:
+
+`const [variableName] = require('[repoLocation]/lotide')`
 
 ## Table of Contents
 
