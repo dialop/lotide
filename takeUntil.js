@@ -33,6 +33,7 @@ const takeUntil = function(array, callback) {
     if (!callback(data)) {
       result.push(data);
     } else {
+      return result;
     }
   }
   return result;
