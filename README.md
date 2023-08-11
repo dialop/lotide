@@ -16,7 +16,7 @@ This repository contains all the Lotide project files completed by [Diana](https
 
 **Require it:**
 
-`const _ = require('@username/lotide');`
+`const _ = require('@dialop/lotide');`
 
 ## Documentation
 
