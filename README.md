@@ -1,26 +1,26 @@
-# Lotide Repository
+# Lotide
 
 The lotide is a modular collection of functions that helps with practicing and creating different types of functions using JavasScript. It is considered as a clone of the [Lodash](https://lodash.com/) Library.
 
+## Purpose
+
+**_BEWARE:_ This library was published for learning purposes. It is _not_ intended for use in production-grade software.**
+
 This repository contains all the Lotide project files completed by [Diana](https://github.com/dialop/lotide) for the Lighthouse Labs Web Developnment Bootcamp.
 
-## Installation
+## Usage
 
-[Clone](https://github.com/dialop/lotide.git) or fork this repository into your own directory, alternatively you can use the following commandline:
+**Install it:**
 
-`$ git clone https://github.com/dialop/lotide`
+`npm install @dialop/lotide`
 
-or if you're using NPM:
+**Require it:**
 
-`$ npm i https://github.com/dialop/lotide`
+`const _ = require('@username/lotide');`
 
----
+## Documentation
 
-Add the library to any file using:
-
-`const [variableName] = require('[repoLocation]/lotide')`
-
-## Table of Contents
+The following functions are currently implemented:
 
 - [assertEqual](/assertEqual.js/)
   - In this file, assertEqual is a method used to test if two values are equal using the `==` operator.
