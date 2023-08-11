@@ -9,7 +9,7 @@ const without = function(source, itemsToRemove) {
     }
   }
 
-  console.log(resultArray);
+ 
   return resultArray;
 
 };
